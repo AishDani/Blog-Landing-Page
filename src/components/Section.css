@@ -1,0 +1,17 @@
+/* Section.css */
+.hero-banner {
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  color: white; /* Default color, can be overridden */
+}
+
+/* App.css */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-body {
+  text-align: left;
+  padding: 20px;
+}
