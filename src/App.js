@@ -43,7 +43,7 @@ const App = () => {
           comment: comment,
 
     }
-    const call = await services?.makeAnApiCall("/user",obj );
+    const call = await services?.makeAnApiCall("http://localhost:3000/user",obj );
     console.info("call>>>", call);
     if(call.status === 200){
     return (
