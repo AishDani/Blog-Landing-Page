@@ -1,9 +1,12 @@
 import * as contentstack from 'contentstack';
 
+
+const { REACT_APP_API_KEY, REACT_APP_DELIVERY_TOKEN, REACT_APP_ENVIRONMENT } = process.env;
+
 const Stack = contentstack.Stack({
-  api_key: 'bltbca7e4bbe50b9dcf',
-  delivery_token: 'cs8d412b838326dc635584e301',
-  environment: 'local',
+  api_key: REACT_APP_API_KEY,
+  delivery_token: REACT_APP_DELIVERY_TOKEN,
+  environment: REACT_APP_ENVIRONMENT,
 });
 
 

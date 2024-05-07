@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/blog/:slug",
+        "destination": "/news/:slug",
+        "statusCode": 307
+      }
+    ]
+  }
+  
