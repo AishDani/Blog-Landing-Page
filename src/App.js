@@ -27,7 +27,7 @@ const App = () => {
 
   const htmlBody = content?.body ? jsonToHtml(content.body) : "";
   // const handleButtonClick = async () => {
-  //   const call = await services?.makeAnApiCall("http://localhost:5000/user", {
+  //   const call = await services?.makeAnApiCall("/user", {
   //     users: ["gojo", "satoru"],
   //   });
   //   console.info("call>>>", call);
@@ -43,7 +43,7 @@ const App = () => {
           comment: comment,
 
     }
-    const call = await services?.makeAnApiCall("http://localhost:3000/user",obj );
+    const call = await services?.makeAnApiCall("/user",obj );
     console.info("call>>>", call);
     if(call.status === 200){
     return (
@@ -52,7 +52,12 @@ const App = () => {
         type: 'success'
       })
     )
-  }
+  }else {
+      return Notification({
+        notificationContent: { text: "Oops! Something Went Wrong." },
+        type: "success",
+      });
+    }
 }
 
   const handleOnChangeName = (e)=>{
