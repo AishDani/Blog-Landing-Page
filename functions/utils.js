@@ -8,7 +8,7 @@ export  default  async function createEntry(data) {
     const response = await fetch('https://api.contentstack.io/v3/content_types/comments/entries?locale=en-us', {
       method: 'POST',
       headers: {
-        'api_key': REACT_APP_MANAGEMENT_TOKEN,
+        'api_key': REACT_APP_API_KEY,
         'authorization': REACT_APP_MANAGEMENT_TOKEN,
         'Content-Type': 'application/json',
       },
